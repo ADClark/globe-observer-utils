@@ -30,7 +30,6 @@ def parse_api_data(response_json):
 
 
 def is_valid_latlon_box(latlon_box):
-
     valid_lat_checks = (
         latlon_box["min_lat"] < latlon_box["max_lat"]
         and latlon_box["max_lat"] <= 90

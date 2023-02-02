@@ -61,7 +61,6 @@ def get_country_api_data(
 
     # Due to the size of the mhm column names, ArcGIS truncates the names so it must be renamed in this step.
     if protocol == "mosquito_habitat_mapper":
-
         mhm_rename_dict = {
             col: f"mosquitohabitatmapper{col}"
             for col in df.columns
